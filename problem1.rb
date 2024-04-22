@@ -1,5 +1,5 @@
 def extract_urls(text)
-  pattern = '/(?:https?|ftp):\/\/[\w\-]+(?:\.[\w\-]+)+[\w\-.,@?^=%&:/~\+#]*[\w\-@?^=%&/~\+#]/'
+  pattern = /(?:https?|ftp):\/\/[\w\]+(?:\.[\w\-]+)+[\w\-.,@?^=%&:/\+#]*[\w\-@?^=%&/~\+#]/
   text.scan(pattern)
 end
 
